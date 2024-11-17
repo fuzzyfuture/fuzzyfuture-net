@@ -1,0 +1,105 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+body {
+  background-color: rgb(145, 195, 245);
+}
+
+a {
+  color: inherit;
+}
+
+footer {
+  padding: 10px 5px 5px 5px;
+  background: #A5C7EB url('/img/dots-bg.png') repeat-x;
+  color: rgb(76, 113, 168);
+}
+
+footer a :hover {
+  opacity: 0.9;
+}
+
+.container-main {
+  max-width: 900px;
+  background: #c1e0ff;
+  box-shadow: 0 0 5px rgb(76, 113, 168);
+  border: solid 1px rgb(76, 113, 168);
+  padding: 0;
+}
+
+.nav {
+  background: #e3f1ff;
+  border-top: solid rgb(76, 113, 168) 1px;
+  border-bottom: solid rgb(76, 113, 168) 1px;
+  padding: 7px 5px;
+  gap: 3px;
+}
+
+.nav-link {
+  color: rgb(76, 113, 168);
+  background: linear-gradient(0deg, rgb(130, 188, 255) 0%, rgb(255, 254, 254) 100%);
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(76, 113, 168);
+  font-weight: bold;
+  transition: none;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active {
+  color: white;
+  background: linear-gradient(0deg, rgb(130, 188, 255) 70%, rgb(255, 254, 254) 100%);
+  font-style: italic;
+  transition: none;
+}
+
+.banner {
+  padding: 5px;
+}
+
+.img-banner {
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  padding: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #A5C7EB;
+}
+
+.sidebar {
+  background: rgb(189, 219, 250);
+}
+
+.lastfm {
+  padding: 0 5px;
+  border: 1px solid #A5C7EB;
+}
+
+.lastfm a {
+  text-decoration: none;
+  line-height: 110%;
+}
+
+.lastfm img {
+  border: 1px solid #A5C7EB;
+}
+
+.lastfm a:hover {
+  text-decoration: underline;
+}
+
+.lastfm a:hover img {
+  border: 1px solid black;
+}
+
+.lastfm-credit a {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.lastfm-credit a:hover {
+  text-decoration: underline;
+}
