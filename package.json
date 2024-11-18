@@ -3,13 +3,18 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "generate-image-metadata": "node scripts/generateImageMetadata.js",
+    "generate-image-thumbnails": "node scripts/generateImageThumbnails.js",
+    "generate-web-images": "node scripts/generateWebImages.js",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "npm run generate-image-metadata && npm run generate-image-thumbnails && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.13"
+    "astro": "^4.16.13",
+    "aws-sdk": "^2.1692.0",
+    "fslightbox": "^3.4.2"
   }
 }

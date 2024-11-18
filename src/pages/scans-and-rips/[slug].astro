@@ -1,0 +1,76 @@
+---
+import Layout from '../../layouts/main.astro';
+import imageMetadata from '../../data/imageMetadata.json';
+
+export async function getStaticPaths() {
+  const { default: scans } = await import('../../data/scans');
+  
+  return Object.keys(scans).map((slug) => ({
+    params: { slug },
+    props: { scan: scans[slug] }
+  }))
+}
+
+interface Download {
+  filename: string;
+  size: string;
+}
+
+type Downloads = Record<string, Download>;
+type Links = Record<string, string>;
+
+const { slug } = Astro.params;
+const { scan } = Astro.props;
+
+const images = imageMetadata[slug] || [];
+const thumbnails = images.map((img: string) => img.replace('https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans', '/img/thumbs').replace('/web', ''));
+const downloads = scan.downloads as Downloads;
+const links = scan.links as Links;
+---
+<Layout>
+  <div class="row mb-3">
+    <div class="col-md-9">
+      <div class="top my-2">
+        <div class="title-lg">
+          <h4>{scan.title} {scan.titleR ? "(" + scan.titleR + ")" : ""}</h4>
+        </div>
+        <div class="artist-lg">
+          <h5>{scan.artist} {scan.artistR ? "(" + scan.artistR + ")" : ""}</h5>
+        </div>
+        <div class="scan-info">
+          Released: {scan.day ? scan.day + ", " + scan.year : scan.year} <br />
+          Label: {scan.label} <br />
+          Catalog Number: {scan.cat}
+        </div>
+        <div class="badges-lg">
+          {Object.entries(scan.badges).map(([name, color]) => (
+            <span class={"badge-" + color}>{name}</span>
+          ))}
+        </div>
+        <div>{scan.descLong ? scan.descLong : scan.desc}</div>
+      </div>
+    </div>
+    <div class="col-md-3 sidebar">
+      <div class="my-2 d-flex flex-column">
+        <div><b>Downloads</b></div>
+        {downloads ? Object.entries(downloads).map(([name, download]) => (
+          <a href={"https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/downloads/" + download.filename} class="dl mt-1">{name} (.zip, {download.size})</a>
+        )) : ""}
+        <div class="mt-1"><b>External Links</b></div>
+        {links ? Object.entries(links).map(([name, href]) => (
+          <a href={href} class="dl mt-1" target="_blank">{name}</a>
+        )) : ""}
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {thumbnails.map((thumb: string, index: number) => (
+      <a data-fslightbox="gallery" href={images[index]} class="col-lg-2 col-md-3 col-4">
+        <div class="card scan-thumb">
+          <img src={thumb}/>
+        </div>
+      </a>
+    ))}
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js" defer></script>
+</Layout>

@@ -1,16 +1,69 @@
 ---
 import Layout from '../../layouts/main.astro';
+import ScanBox from '../../components/scanbox.astro';
+import scans from '../../data/scans';
+
+const groupedScans = {
+  music: Object.entries(scans).filter(([_, scan]) => scan.music),
+  books: Object.entries(scans).filter(([_, scan]) => !scan.music)
+};
 ---
 <Layout>
 	<div class="row">
 		<div class="col-md-12 py-2">
-      <div class="box">
-        <h4>CDs</h4>
-        <p>There's nothing here yet! :3</p>
+      <div class="box pb-3">
+        <h4>Music</h4>
+        <div class="row">
+          <div class="col-lg-4">
+            {groupedScans.music.map(([slug, scan]) => (
+              <ScanBox
+                href={slug}
+                thumb={scan.thumb}
+                title={scan.title}
+                titleR={scan.titleR}
+                artist={scan.artist}
+                artistR={scan.artistR}
+                year={scan.year}
+                cat={scan.cat}
+                badges={scan.badges}
+                desc={scan.desc}
+              />
+            ))}
+          </div>
+          <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-4">
+            
+          </div>
+        </div>
       </div>
-			<div class="box">
+			<div class="box pb-3">
         <h4>Books</h4>
-        <p>There's nothing here yet! :3</p>
+        <div class="row">
+          <div class="col-lg-4">
+            {groupedScans.books.map(([slug, scan]) => (
+              <ScanBox
+                href={slug}
+                thumb={scan.thumb}
+                title={scan.title}
+                titleR={scan.titleR}
+                artist={scan.artist}
+                artistR={scan.artistR}
+                year={scan.year}
+                cat={scan.cat}
+                badges={scan.badges}
+                desc={scan.desc}
+              />
+            ))}
+          </div>
+          <div class="col-lg-4">
+            
+          </div>
+          <div class="col-lg-4">
+            
+          </div>
+        </div>
       </div>
 		</div>
 	</div>

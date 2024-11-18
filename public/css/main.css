@@ -103,3 +103,130 @@ footer a :hover {
 .lastfm-credit a:hover {
   text-decoration: underline;
 }
+
+.scan-container {
+  text-decoration: none;
+  background: linear-gradient(0deg, rgb(189, 219, 250) 0%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(76, 113, 168);
+  border-radius: 5px;
+}
+
+.scan-container:hover {
+  background: linear-gradient(0deg, rgb(189, 219, 250) 70%, rgb(239, 247, 255) 100%);
+}
+
+.scan-container .desc {
+  line-height: 110%;
+  margin-bottom: 4px;
+}
+
+.scan-container .top {
+  line-height: 110%;
+}
+
+.scan-container .release-info {
+  opacity: 0.7;
+  line-height: 90%;
+  font-size: 0.7rem;
+}
+
+.badges {
+  padding: 3px 0 3px 0;
+  border-top: 1px dotted rgb(76, 113, 168);
+  border-bottom: 1px dotted rgb(76, 113, 168);
+  margin: 4px 0 4px 0;
+}
+
+.badges-lg {
+  padding: 9px 0 9px 0;
+  border-top: 1px dotted rgb(76, 113, 168);
+  border-bottom: 1px dotted rgb(76, 113, 168);
+  margin: 4px 0 4px 0;
+}
+
+.badges span {
+  font-size: 0.7rem;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: white;
+  margin-right: 2px;
+}
+
+.badges-lg span {
+  border-radius: 5px;
+  padding: 3px 7px;
+  color: white;
+  margin-right: 4px;
+}
+
+.badge-blue {
+  background: linear-gradient(0deg, rgb(76, 113, 168) 75%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(40, 77, 133);
+}
+
+.badge-gray {
+  background: linear-gradient(0deg, rgb(104, 104, 104) 75%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(53, 53, 53);
+}
+
+.badge-orange {
+  background: linear-gradient(0deg, rgb(216, 110, 11) 75%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(160, 96, 13);
+}
+
+.badge-pink {
+  background: linear-gradient(0deg, rgb(212, 68, 169) 75%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(160, 60, 115);
+}
+
+.badge-yellow {
+  background: linear-gradient(0deg, rgb(19, 180, 33) 75%, rgb(239, 247, 255) 100%);
+  border: 1px solid rgb(40, 136, 31);
+}
+
+.scan-thumb {
+  background-color: rgb(189, 219, 250);
+  margin-bottom: 10px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  opacity: 0.5;
+}
+
+.scan-thumb:hover {
+  opacity: 1;
+}
+
+.scan-thumb img {
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.title-lg h4 {
+  font-weight: bold;
+}
+
+.scan-info {
+  padding-top: 4px;
+  border-top: 1px dotted rgb(76, 113, 168);
+  font-size: 0.8rem;
+  line-height: 130%;
+}
+
+.dl {
+  color: rgb(76, 113, 168);
+  background: linear-gradient(0deg, rgb(130, 188, 255) 0%, rgb(255, 254, 254) 100%);
+  padding: 2px 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(76, 113, 168);
+  font-weight: bold;
+  transition: none;
+  text-decoration: none;
+}
+
+.dl:hover, .dl:focus, .dl:active {
+  color: white;
+  background: linear-gradient(0deg, rgb(130, 188, 255) 70%, rgb(255, 254, 254) 100%);
+  font-style: italic;
+  transition: none;
+}
