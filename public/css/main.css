@@ -5,6 +5,7 @@
 
 body {
   background-color: rgb(145, 195, 245);
+  background-image: url("/img/animal-04.png");
 }
 
 a {
@@ -13,7 +14,7 @@ a {
 
 footer {
   padding: 10px 5px 5px 5px;
-  background: #A5C7EB url('/img/dots-bg.png') repeat-x;
+  background: #a5c7eb url("/img/dots-bg.png") repeat-x;
   color: rgb(76, 113, 168);
 }
 
@@ -39,7 +40,11 @@ footer a :hover {
 
 .nav-link {
   color: rgb(76, 113, 168);
-  background: linear-gradient(0deg, rgb(130, 188, 255) 0%, rgb(255, 254, 254) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(130, 188, 255) 0%,
+    rgb(255, 254, 254) 100%
+  );
   padding: 2px 10px;
   border-radius: 5px;
   border: 1px solid rgb(76, 113, 168);
@@ -47,9 +52,15 @@ footer a :hover {
   transition: none;
 }
 
-.nav-link:hover, .nav-link:focus, .nav-link:active {
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
   color: white;
-  background: linear-gradient(0deg, rgb(130, 188, 255) 70%, rgb(255, 254, 254) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(130, 188, 255) 70%,
+    rgb(255, 254, 254) 100%
+  );
   font-style: italic;
   transition: none;
 }
@@ -66,7 +77,7 @@ footer a :hover {
 .box {
   padding: 5px;
   margin-bottom: 5px;
-  border-bottom: 1px dashed #A5C7EB;
+  border-bottom: 1px dashed #a5c7eb;
 }
 
 .sidebar {
@@ -75,7 +86,7 @@ footer a :hover {
 
 .lastfm {
   padding: 0 5px;
-  border: 1px solid #A5C7EB;
+  border: 1px solid #a5c7eb;
 }
 
 .lastfm a {
@@ -84,7 +95,7 @@ footer a :hover {
 }
 
 .lastfm img {
-  border: 1px solid #A5C7EB;
+  border: 1px solid #a5c7eb;
 }
 
 .lastfm a:hover {
@@ -106,13 +117,21 @@ footer a :hover {
 
 .scan-container {
   text-decoration: none;
-  background: linear-gradient(0deg, rgb(189, 219, 250) 0%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(189, 219, 250) 0%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(76, 113, 168);
   border-radius: 5px;
 }
 
 .scan-container:hover {
-  background: linear-gradient(0deg, rgb(189, 219, 250) 70%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(189, 219, 250) 70%,
+    rgb(239, 247, 255) 100%
+  );
 }
 
 .scan-container .desc {
@@ -131,7 +150,7 @@ footer a :hover {
 }
 
 .badges {
-  padding: 3px 0 3px 0;
+  padding: 1px 0 3px 0;
   border-top: 1px dotted rgb(76, 113, 168);
   border-bottom: 1px dotted rgb(76, 113, 168);
   margin: 4px 0 4px 0;
@@ -160,27 +179,47 @@ footer a :hover {
 }
 
 .badge-blue {
-  background: linear-gradient(0deg, rgb(76, 113, 168) 75%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(76, 113, 168) 75%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(40, 77, 133);
 }
 
 .badge-gray {
-  background: linear-gradient(0deg, rgb(104, 104, 104) 75%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(104, 104, 104) 75%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(53, 53, 53);
 }
 
 .badge-orange {
-  background: linear-gradient(0deg, rgb(216, 110, 11) 75%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(216, 110, 11) 75%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(160, 96, 13);
 }
 
 .badge-pink {
-  background: linear-gradient(0deg, rgb(212, 68, 169) 75%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(212, 68, 169) 75%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(160, 60, 115);
 }
 
 .badge-yellow {
-  background: linear-gradient(0deg, rgb(19, 180, 33) 75%, rgb(239, 247, 255) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(19, 180, 33) 75%,
+    rgb(239, 247, 255) 100%
+  );
   border: 1px solid rgb(40, 136, 31);
 }
 
@@ -215,7 +254,11 @@ footer a :hover {
 
 .dl {
   color: rgb(76, 113, 168);
-  background: linear-gradient(0deg, rgb(130, 188, 255) 0%, rgb(255, 254, 254) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(130, 188, 255) 0%,
+    rgb(255, 254, 254) 100%
+  );
   padding: 2px 10px;
   border-radius: 5px;
   border: 1px solid rgb(76, 113, 168);
@@ -224,9 +267,15 @@ footer a :hover {
   text-decoration: none;
 }
 
-.dl:hover, .dl:focus, .dl:active {
+.dl:hover,
+.dl:focus,
+.dl:active {
   color: white;
-  background: linear-gradient(0deg, rgb(130, 188, 255) 70%, rgb(255, 254, 254) 100%);
+  background: linear-gradient(
+    0deg,
+    rgb(130, 188, 255) 70%,
+    rgb(255, 254, 254) 100%
+  );
   font-style: italic;
   transition: none;
 }
