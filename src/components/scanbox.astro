@@ -15,27 +15,29 @@ export interface Props {
 const { href, thumb, title, titleR, artist, artistR, year, cat, badges, desc } = Astro.props;
 ---
 
-<a class="scan-container d-flex align-items-start p-2" href={"/scans-and-rips/" + href}>
-  <img src={"/img/thumbs/" + href + "/" + thumb} class="img-fluid" width="100" />
-  <div class="ps-2">
-    <div class="top">
-      <div class="title">
-        <b>{title} <span class="title-r">{titleR ? "(" + titleR + ")" : ""}</b>
+<div class="col-md-4">
+  <a class="scan-container d-flex align-items-start p-2" href={"/scans-and-rips/" + href}>
+    <img src={"/img/thumbs/" + href + "/" + thumb} class="img-fluid" width="100" />
+    <div class="ps-2">
+      <div class="top">
+        <div class="title">
+          <b>{title} <span class="title-r">{titleR ? "(" + titleR + ")" : ""}</b>
+        </div>
+        <div class="artist">
+          {artist} <span class="artist-r">{artistR ? "(" + artistR + ")" : ""}</span>
+        </div>
       </div>
-      <div class="artist">
-        {artist} <span class="artist-r">{artistR ? "(" + artistR + ")" : ""}</span>
+      <div class="badges">
+        {Object.entries(badges).map(([name, color]) => (
+          <span class={"badge-" + color}>{name}</span>
+        ))}
+      </div>
+      <div class="desc">
+        <small>{desc ? desc : ""}</small>
+      </div>
+      <div class="release-info">
+        {year && cat ? year + " | " + cat : ""}
       </div>
     </div>
-    <div class="badges">
-      {Object.entries(badges).map(([name, color]) => (
-        <span class={"badge-" + color}>{name}</span>
-      ))}
-    </div>
-    <div class="desc">
-      <small>{desc ? desc : ""}</small>
-    </div>
-    <div class="release-info">
-      {year && cat ? year + " | " + cat : ""}
-    </div>
-  </div>
-</a>
+  </a>
+</div>

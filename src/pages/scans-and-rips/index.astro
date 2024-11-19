@@ -14,55 +14,39 @@ const groupedScans = {
       <div class="box pb-3">
         <h4>Music</h4>
         <div class="row">
-          <div class="col-lg-4">
-            {groupedScans.music.map(([slug, scan]) => (
-              <ScanBox
-                href={slug}
-                thumb={scan.thumb}
-                title={scan.title}
-                titleR={scan.titleR}
-                artist={scan.artist}
-                artistR={scan.artistR}
-                year={scan.year}
-                cat={scan.cat}
-                badges={scan.badges}
-                desc={scan.desc}
-              />
-            ))}
-          </div>
-          <div class="col-lg-4">
-            
-          </div>
-          <div class="col-lg-4">
-            
-          </div>
+          {groupedScans.music.map(([slug, scan]) => (
+            <ScanBox
+              href={slug}
+              thumb={scan.thumb}
+              title={scan.title}
+              titleR={scan.titleR}
+              artist={scan.artist}
+              artistR={scan.artistR}
+              year={scan.year}
+              cat={scan.cat}
+              badges={scan.badges}
+              desc={scan.desc}
+            />
+          ))}
         </div>
       </div>
 			<div class="box pb-3">
         <h4>Books</h4>
         <div class="row">
-          <div class="col-lg-4">
-            {groupedScans.books.map(([slug, scan]) => (
-              <ScanBox
-                href={slug}
-                thumb={scan.thumb}
-                title={scan.title}
-                titleR={scan.titleR}
-                artist={scan.artist}
-                artistR={scan.artistR}
-                year={scan.year}
-                cat={scan.cat}
-                badges={scan.badges}
-                desc={scan.desc}
-              />
-            ))}
-          </div>
-          <div class="col-lg-4">
-            
-          </div>
-          <div class="col-lg-4">
-            
-          </div>
+          {groupedScans.books.map(([slug, scan]) => (
+            <ScanBox
+              href={slug}
+              thumb={scan.thumb}
+              title={scan.title}
+              titleR={scan.titleR}
+              artist={scan.artist}
+              artistR={scan.artistR}
+              year={scan.year}
+              cat={scan.cat}
+              badges={scan.badges}
+              desc={scan.desc}
+            />
+          ))}
         </div>
       </div>
 		</div>

@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 const rawImagesDir = path.join(__dirname, '../raw-images');
 const thumbsDir = path.join(__dirname, '../public/img/thumbs');
+const rawSubDir = 'raw';
 const thumbnailWidth = 100;
 const thumbnailQuality = 80;
 
@@ -19,17 +20,17 @@ const generateThumbnails = async () => {
   const folders = fs.readdirSync(rawImagesDir);
 
   for (const folder of folders) {
-    const folderPath = path.join(rawImagesDir, folder);
+    const rawFolderPath = path.join(rawImagesDir, folder, rawSubDir);
     const outputFolder = path.join(thumbsDir, folder);
 
-    if (fs.lstatSync(folderPath).isDirectory()) {
+    if (fs.existsSync(rawFolderPath) && fs.lstatSync(rawFolderPath).isDirectory()) {
       if (!fs.existsSync(outputFolder)) {
         fs.mkdirSync(outputFolder, { recursive: true });
       }
 
-      const files = fs.readdirSync(folderPath).filter((file) => /\.(jpg|png|gif)$/i.test(file));
+      const files = fs.readdirSync(rawFolderPath).filter((file) => /\.(jpg|jpeg|png|gif)$/i.test(file));
       for (const file of files) {
-        const inputFile = path.join(folderPath, file);
+        const inputFile = path.join(rawFolderPath, file);
         const outputFile = path.join(outputFolder, `${path.parse(file).name}.jpg`);
 
         if (fs.existsSync(outputFile)) {
@@ -47,6 +48,8 @@ const generateThumbnails = async () => {
           console.error(`Error processing ${file}:`, err);
         }
       }
+    } else {
+      console.warn(`Raw folder not found for: ${folder}`);
     }
   }
 

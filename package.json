@@ -6,6 +6,7 @@
     "generate-image-metadata": "node scripts/generateImageMetadata.js",
     "generate-image-thumbnails": "node scripts/generateImageThumbnails.js",
     "generate-web-images": "node scripts/generateWebImages.js",
+    "images": "npm run generate-image-metadata && npm run generate-image-thumbnails && npm run generate-web-images",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "npm run generate-image-metadata && npm run generate-image-thumbnails && astro build",
