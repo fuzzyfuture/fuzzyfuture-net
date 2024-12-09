@@ -95,6 +95,14 @@
       "intlShipping": false,
       "logo": "bridge-inc.jpg",
       "desc": "Label / record store. Can be difficult to navigate, but they occasionally have some rare/unique items."
+    },
+    {
+      "type": "i",
+      "name": "Coconuts Disk",
+      "href": "https://coconutsdisk-webstore.com/",
+      "intlShipping": true,
+      "logo": "coconuts-disk.ico",
+      "desc": "Used record store with a great selection, they upload exceptionally rare items to Yahoo! Auctions under coconutsdisk_digup, which I definitely recommend keeping an eye on."
     }
   ],
   "artistWebsites": [
