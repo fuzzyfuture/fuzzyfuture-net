@@ -113,7 +113,7 @@ footer a :hover {
 
   .nav-link {
     color: white;
-    padding: 6px 10px;
+    padding: 10px 10px !important;
     font-weight: bold;
     transition: none;
     background: linear-gradient(90deg, rgba(76,113,168,1) 50%, #91c3f5 90%);
