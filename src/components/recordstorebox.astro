@@ -1,0 +1,27 @@
+---
+export interface Props {
+  name: string;
+  href: string;
+  intlShipping: boolean;
+  logo: string;
+  desc: string;
+}
+
+const { name, href, intlShipping, logo, desc } = Astro.props;
+---
+
+<div class="row g-2 mb-2">
+  <div class="col-md-3">
+    <a class="gradient-box d-flex p-2" href={href} target="_blank">
+      <img src={"/img/logos/" + logo} class="align-self-center me-2" height="32" />
+      <div>
+        <b>{name}</b> <br />
+        <small>Intl. shipping:</small> <span class={"cbadge badge-" + (intlShipping ? "green" : "red")}>{intlShipping ? "yes! :D" : "no :<"}</span> <br />
+      </div>
+    </a>
+  </div>
+  <div class="col-md-9">
+    {desc}
+  </div>
+</div>
+<hr />

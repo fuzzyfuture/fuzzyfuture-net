@@ -1,19 +1,56 @@
 ---
 import Layout from '../../layouts/main.astro';
+import GuideBox from '../../components/guidebox.astro';
+import RecordStoreBox from '../../components/recordstorebox.astro';
+
+import resourcesData from '../../data/resources.json';
+
+const guides = resourcesData.guides;
+const recordStores = resourcesData.recordStores;
+const groupedRecordStores = {
+  majorRetailers: recordStores.filter((store) => store.type == "mr"),
+  independent: recordStores.filter((store) => store.type == "i")
+}
 ---
 <Layout>
 	<div class="row">
 		<div class="col-md-12 py-2">
       <div class="box">
-        <h4>Guides</h4>
-        <p>There's nothing here yet! :3</p>
+        <h1>Guides</h1>
+          {guides.map((guide) => (
+            <GuideBox 
+              name={guide.name}
+              href={guide.href}
+              lastUpdated={guide.lastUpdated}
+              desc={guide.desc}
+            />
+          ))}
       </div>
       <div class="box">
-        <h4>Record Stores</h4>
-        <p>There's nothing here yet! :3</p>
+        <h1>Record Stores</h1>
+        <h2>Major Retailers</h2>
+        {groupedRecordStores.majorRetailers.map((store) => (
+          <RecordStoreBox
+            name={store.name}
+            href={store.href}
+            intlShipping={store.intlShipping}
+            logo={store.logo}
+            desc={store.desc}
+          />
+        ))}
+        <h2>Independent</h2>
+        {groupedRecordStores.independent.map((store) => (
+          <RecordStoreBox
+            name={store.name}
+            href={store.href}
+            intlShipping={store.intlShipping}
+            logo={store.logo}
+            desc={store.desc}
+          />
+        ))}
       </div>
       <div class="box">
-        <h4>Artist Websites</h4>
+        <h1>Artist Websites</h1>
         <p>There's nothing here yet! :3</p>
       </div>
 		</div>

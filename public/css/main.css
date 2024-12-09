@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: rgb(145, 195, 245);
+  background-color: #91c3f5;
   background-image: url("/img/animal-04.png");
 }
 
@@ -15,7 +15,7 @@ a {
 footer {
   padding: 10px 5px 5px 5px;
   background: #a5c7eb url("/img/dots-bg.png") repeat-x;
-  color: rgb(76, 113, 168);
+  color: #4c71a8;
 }
 
 footer a :hover {
@@ -32,22 +32,28 @@ footer a :hover {
 
 .nav {
   background: #e3f1ff;
-  border-top: solid rgb(76, 113, 168) 1px;
-  border-bottom: solid rgb(76, 113, 168) 1px;
-  padding: 7px 5px;
+  border-top: solid #7095cb 1px;
+  border-bottom: solid rgba(76,113,168,1) 1px;
+  padding: 0px 5px;
   gap: 3px;
+  background: rgb(76,113,168);
+  background: linear-gradient(0deg, rgba(76,113,168,1) 0%, rgba(93,135,196,1) 50%, rgba(112,149,203,1) 50%, rgba(202,220,247,1) 100%);
 }
 
+/* pink
+.nav {
+  background: #e3f1ff;
+  border-top: solid rgb(76, 113, 168) 1px;
+  border-bottom: solid rgba(202,53,137,1) 1px;
+  padding: 0px 5px;
+  gap: 3px;
+  background: rgb(202,53,137);
+  background: linear-gradient(0deg, rgba(202,53,137,1) 0%, rgba(196,93,154,1) 50%, rgba(203,112,170,1) 50%, rgba(247,202,232,1) 100%);
+*/
+
 .nav-link {
-  color: rgb(76, 113, 168);
-  background: linear-gradient(
-    0deg,
-    rgb(130, 188, 255) 0%,
-    rgb(255, 254, 254) 100%
-  );
-  padding: 2px 10px;
-  border-radius: 5px;
-  border: 1px solid rgb(76, 113, 168);
+  color: white;
+  padding: 3px 10px;
   font-weight: bold;
   transition: none;
 }
@@ -56,12 +62,7 @@ footer a :hover {
 .nav-link:focus,
 .nav-link:active {
   color: white;
-  background: linear-gradient(
-    0deg,
-    rgb(130, 188, 255) 70%,
-    rgb(255, 254, 254) 100%
-  );
-  font-style: italic;
+  background: rgba(76,113,168,1)  ;
   transition: none;
 }
 
@@ -76,8 +77,6 @@ footer a :hover {
 
 .box {
   padding: 5px;
-  margin-bottom: 5px;
-  border-bottom: 1px dashed #a5c7eb;
 }
 
 .sidebar {
@@ -115,7 +114,7 @@ footer a :hover {
   text-decoration: underline;
 }
 
-.scan-container {
+.gradient-box {
   text-decoration: none;
   background: linear-gradient(
     0deg,
@@ -126,7 +125,7 @@ footer a :hover {
   border-radius: 5px;
 }
 
-.scan-container:hover {
+.gradient-box:hover {
   background: linear-gradient(
     0deg,
     rgb(189, 219, 250) 70%,
@@ -134,9 +133,23 @@ footer a :hover {
   );
 }
 
+.scan-container {
+  height: 122px;
+}
+
+.scan-container img {
+  max-height: 100%;
+  width: 90px;
+  min-width: 90px;
+  object-fit: contain;
+}
+
 .scan-container .desc {
   line-height: 110%;
   margin-bottom: 4px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 2;
 }
 
 .scan-container .top {
@@ -150,10 +163,12 @@ footer a :hover {
 }
 
 .badges {
-  padding: 2px 0 4px 0;
+  padding: 4px 0 0 0;
   border-top: 1px dotted rgb(76, 113, 168);
   border-bottom: 1px dotted rgb(76, 113, 168);
   margin: 4px 0 4px 0;
+  height: 27px;
+  overflow: hidden;
 }
 
 .badges-lg {
@@ -163,15 +178,16 @@ footer a :hover {
   margin: 4px 0 4px 0;
 }
 
-.badges span {
+.cbadge {
   font-size: 0.7rem;
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 0 5px;
   color: white;
-  margin-right: 2px;
+  margin: 0 2px 4px 0;
+  white-space: nowrap;
 }
 
-.badges-lg span {
+.cbadge-lg {
   border-radius: 5px;
   padding: 3px 7px;
   color: white;
@@ -214,31 +230,76 @@ footer a :hover {
   border: 1px solid rgb(160, 60, 115);
 }
 
-.badge-yellow {
+.badge-green {
   background: linear-gradient(
     0deg,
-    rgb(19, 180, 33) 75%,
+    rgb(64, 173, 31) 75%,
     rgb(239, 247, 255) 100%
   );
-  border: 1px solid rgb(40, 136, 31);
+  border: 1px solid rgb(61, 136, 31);
+}
+
+.badge-teal {
+  background: linear-gradient(
+    0deg,
+    rgb(19, 168, 168) 75%,
+    rgb(239, 247, 255) 100%
+  );
+  border: 1px solid rgb(31, 136, 131);
+}
+
+.badge-purple {
+  background: linear-gradient(
+    0deg,
+    rgb(138, 88, 230) 75%,
+    rgb(239, 247, 255) 100%
+  );
+  border: 1px solid rgb(125, 54, 172);
+}
+
+.badge-red {
+  background: linear-gradient(
+    0deg,
+    rgb(192, 67, 67) 75%,
+    rgb(239, 247, 255) 100%
+  );
+  border: 1px solid rgb(145, 40, 40);
+}
+
+.scan-thumb-container {
+  opacity: 0.5;
+}
+
+.scan-thumb-container:hover {
+  opacity: 1;
 }
 
 .scan-thumb {
   background-color: rgb(189, 219, 250);
-  margin-bottom: 10px;
   padding: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  opacity: 0.5;
-}
-
-.scan-thumb:hover {
-  opacity: 1;
 }
 
 .scan-thumb img {
-  height: 100px;
+  height: 120px;
   object-fit: cover;
   border-radius: 5px;
+}
+
+.scan-img-info {
+  line-height: 120%;
+  font-size: 0.75rem;
+}
+
+.scan-img-info a {
+  text-decoration: none;
+  font-size: 0.75rem;
+  opacity: 0.5;
+}
+
+.scan-img-info a:hover {
+  text-decoration: underline;
+  opacity: 1;
 }
 
 .title-lg h4 {
@@ -278,4 +339,42 @@ footer a :hover {
   );
   font-style: italic;
   transition: none;
+}
+
+hr {
+  opacity: 1;
+  border-top: 1px dashed #a5c7eb;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: rgba(93,135,196,1);
+  border-radius: 10px 35px 5px 5px;
+  color: white;
+  padding: 5px 8px 4px 8px;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid white;
+  background-color: rgba(93,135,196,1);
+  color: white;
+  padding: 5px 5px 4px 10px;
+  border-radius: 5px 5px 35px 10px;
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+h2::before {
+  content: "-";
+  margin-right: 6px;
+  background-color: white;
+}
+
+.img-fluid-col {
+  width: 100%;
+  height: auto;
 }

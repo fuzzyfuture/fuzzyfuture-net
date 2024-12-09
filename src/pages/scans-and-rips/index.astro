@@ -1,8 +1,28 @@
 ---
 import Layout from '../../layouts/main.astro';
 import ScanBox from '../../components/scanbox.astro';
-import scans from '../../data/scans';
 
+import scansData from '../../data/scans.json';
+
+interface Scan {
+  music: boolean;
+  thumb: string;
+  title: string;
+  titleR?: string;
+  artist: string;
+  artistR?: string;
+  day?: string;
+  year?: string;
+  label?: string;
+  cat?: string;
+  badges: any;
+  desc: string;
+  descLong?: string;
+  downloads: any;
+  links?: any;
+}
+
+const scans: Record<string, Scan> = scansData;
 const groupedScans = {
   music: Object.entries(scans).filter(([_, scan]) => scan.music),
   books: Object.entries(scans).filter(([_, scan]) => !scan.music)
@@ -11,9 +31,9 @@ const groupedScans = {
 <Layout>
 	<div class="row">
 		<div class="col-md-12 py-2">
-      <div class="box pb-3">
-        <h4>Music</h4>
-        <div class="row">
+      <div class="box pb-2">
+        <h1>Music</h1>
+        <div class="row g-3">
           {groupedScans.music.map(([slug, scan]) => (
             <ScanBox
               href={slug}
@@ -30,9 +50,10 @@ const groupedScans = {
           ))}
         </div>
       </div>
-			<div class="box pb-3">
-        <h4>Books</h4>
-        <div class="row">
+      <hr />
+			<div class="box pb-2">
+        <h1>Books</h1>
+        <div class="row g-3">
           {groupedScans.books.map(([slug, scan]) => (
             <ScanBox
               href={slug}
@@ -49,6 +70,7 @@ const groupedScans = {
           ))}
         </div>
       </div>
+      <hr />
 		</div>
 	</div>
 </Layout>

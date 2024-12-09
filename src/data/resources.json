@@ -1,0 +1,103 @@
+{
+  "guides": [
+    {
+      "name": "nate's guide to buying japanese music online",
+      "href": "https://rateyourmusic.com/list/natetheneet/nates-guide-to-buying-japanese-music-online/",
+      "lastUpdated": "June 17, 2023",
+      "desc": "Guide I wrote on RYM quite some time ago. I think most of the information here is outdated. I'll write a new version and host it here, eventually."
+    }
+  ],
+  "recordStores": [
+    {
+      "type": "mr",
+      "name": "HMV Japan",
+      "href": "https://www.hmv.co.jp/en/",
+      "intlShipping": true,
+      "logo": "hmv-japan.ico",
+      "desc": "Fairly standard. Shipping is reasonable if you're ordering multiple items. They have a lot of rare stuff 'available' on backorder, but I haven't had any luck personally."
+    },
+    {
+      "type": "mr",
+      "name": "Amazon Japan",
+      "href": "https://www.amazon.co.jp/",
+      "intlShipping": false,
+      "logo": "amazon-japan.ico",
+      "desc": "Most items of interest on here will be sold by third-party sellers. Sometimes you can find a good deal, or something that's not available elsewhere, but most of them don't ship internationally."
+    },
+    {
+      "type": "mr",
+      "name": "Tower Records",
+      "href": "https://tower.jp/",
+      "intlShipping": false,
+      "logo": "tower-records.ico",
+      "desc": "Generally a good source of information, but not a lot of older stock. They're pretty good for ordering newer releases if you do so through a proxy."
+    },
+    {
+      "type": "mr",
+      "name": "Diskunion",
+      "href": "https://diskunion.net/",
+      "intlShipping": false,
+      "logo": "diskunion.ico",
+      "desc": "Pretty similar to HMV and Tower Records. I find that domestic shipping can be a bit expensive from them, but they have some interesting items that other major retailers don't have, and they also carry some used stock."
+    },
+    {
+      "type": "mr",
+      "name": "CD Japan",
+      "href": "https://www.cdjapan.co.jp/",
+      "intlShipping": true,
+      "logo": "cd-japan.ico",
+      "desc": "English equivalent of Neowing. Shipping is quite reasonable, they're good for pre-orders, and they have good sales occasionally. I don't believe they carry any used stock."
+    },
+    {
+      "type": "mr",
+      "name": "Suruga-ya",
+      "href": "https://www.suruga-ya.com/en",
+      "intlShipping": false,
+      "logo": "suruga-ya.png",
+      "desc": "Haven't ordered from them personally but it seems like they have a pretty large selection of used stock."
+    },
+    {
+      "type": "mr",
+      "name": "Book-off",
+      "href": "https://shopping.bookoff.co.jp/",
+      "intlShipping": false,
+      "logo": "book-off.ico",
+      "desc": "Huge selection of used stock, they often have releases that aren't available elsewhere. They also list their products on Yahoo! Auctions, which may be easier to purchase from depending on your proxy service."
+    },
+    {
+      "type": "i",
+      "name": "Disques Blue-very",
+      "href": "http://blue-very.com/",
+      "intlShipping": false,
+      "logo": "disques-blue-very.ico",
+      "desc": "Record store selling releases from their own label and some used stock, where you can sometimes find some rare stuff for relatively low prices. I recommend their bandcamp for their label releases, as they include digital copies and intl. shipping is quite cheap."
+    },
+    {
+      "type": "i",
+      "name": "Cobrant",
+      "href": "https://www.cobrant.jp/",
+      "intlShipping": true,
+      "logo": "cobrant.jpg",
+      "desc": "Used record store that accepts international orders by email. Have not ordered from them personally, but it looks like they have a pretty good selection with reasonable prices."
+    },
+    {
+      "type": "i",
+      "name": "Record City",
+      "href": "https://www.recordcity.jp/en/",
+      "intlShipping": true,
+      "logo": "record-city.ico",
+      "desc": "Very good prices and selection on used items, shipping is quite cheap, and they have good descriptions of item condition. Also available on Discogs, but I think the shipping is a little more expensive."
+    },
+    {
+      "type": "i",
+      "name": "Bridge Inc.",
+      "href": "http://bridge-inc.net/",
+      "intlShipping": false,
+      "logo": "bridge-inc.jpg",
+      "desc": "Label / record store. Can be difficult to navigate, but they occasionally have some rare/unique items."
+    }
+  ],
+  "artistWebsites": [
+
+  ]
+}

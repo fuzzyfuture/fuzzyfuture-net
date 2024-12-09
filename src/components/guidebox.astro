@@ -1,0 +1,25 @@
+---
+export interface Props {
+  name: string;
+  href: string;
+  lastUpdated: string;
+  desc: string;
+}
+
+const { name, href, lastUpdated, desc } = Astro.props;
+---
+
+<div class="row g-2">
+  <div class="col-md-6">
+    <a class="gradient-box d-block p-2 mb-2" href={href} target="_blank">
+      <b>{name}</b> <br />
+      <small>Last updated: {lastUpdated}</small> <br />
+    </a>
+  </div>
+  <div class="col-md-6">
+    <div class="p-1">
+      {desc}
+    </div>
+  </div>
+</div>
+<hr />

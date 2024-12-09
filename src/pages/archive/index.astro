@@ -1,13 +1,34 @@
 ---
 import Layout from '../../layouts/main.astro';
+
+import myspaceImages from '../../data/myspaceImages.json';
 ---
 <Layout>
 	<div class="row">
 		<div class="col-md-12 py-2">
       <div class="box">
-        <h4>Website Assets</h4>
-        <p>There's nothing here yet! :3</p>
+        <h1>Random MySpace Assets</h1>
+				<div id="masonryGrid" class="row">
+					{myspaceImages.map((url) => (
+						<a href={url} target="_blank" class="col-md-3 mb-2">
+							<img src={url} style="width: 100%;" />
+						</a>
+					))}
+				</div>
       </div>
 		</div>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+	<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			let grid = document.querySelector('#masonryGrid');
+
+			imagesLoaded(grid, () => {
+				new Masonry(grid, {
+					percentPosition: true
+				})
+			})
+		})
+	</script>
 </Layout>
