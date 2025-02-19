@@ -289,6 +289,24 @@
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/frenesi-meruhen/web/poster.jpg"
     ]
   },
+  "hnc-cult": {
+    "raw": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/cd.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/hype-sticker.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/lyrics.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/raw/poster.png"
+    ],
+    "web": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/cd.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/hype-sticker.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/lyrics.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/hnc-cult/web/poster.jpg"
+    ]
+  },
   "ichiko-aoba-qp": {
     "raw": [
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/ichiko-aoba-qp/raw/IMG_20200827_0008.jpg",
@@ -311,6 +329,80 @@
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/ichiko-aoba-qp/web/IMG_20200827_0014.jpg",
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/ichiko-aoba-qp/web/IMG_20200827_0015.jpg",
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/ichiko-aoba-qp/web/IMG_20200827_0018.jpg"
+    ]
+  },
+  "suitcase-rhodes-pop-music": {
+    "raw": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/book-1.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/book-2.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/book-3.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/book-4.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/cd.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/obi-back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/obi-front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/tray-inner.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/raw/tray-outer.png"
+    ],
+    "web": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/book-1.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/book-2.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/book-3.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/book-4.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/cd.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/obi-back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/obi-front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/tray-inner.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/suitcase-rhodes-pop-music/web/tray-outer.jpg"
+    ]
+  },
+  "sylvia-55-go-sylvia-go": {
+    "raw": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/cd.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/inner.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/lyrics-back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/lyrics-front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/obi.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/order-form-back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/raw/order-form-front.png"
+    ],
+    "web": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/cd.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/inner.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/lyrics-back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/lyrics-front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/obi.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/order-form-back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/sylvia-55-go-sylvia-go/web/order-form-front.jpg"
+    ]
+  },
+  "va-guitar-pop-crazy": {
+    "raw": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/book-1.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/book-2.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/cd.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/obi.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/promo-back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/promo-front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/tray-inner.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/raw/tray-outer.png"
+    ],
+    "web": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/book-1.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/book-2.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/cd.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/obi.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/promo-back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/promo-front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/tray-inner.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/va-guitar-pop-crazy/web/tray-outer.jpg"
     ]
   }
 }

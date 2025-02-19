@@ -157,6 +157,37 @@
       "RYM": "https://rateyourmusic.com/release/album/%E3%83%95%E3%83%AC%E3%83%8D%E3%82%B7/%E3%83%A1%E3%83%AB%E3%83%98%E3%83%B3-meruhen/"
     }
   },
+  "hnc-cult": {
+    "music": true,
+    "thumb": "front.jpg",
+    "title": "Cult",
+    "titleR": "",
+    "artist": "HNC",
+    "artistR": "",
+    "day": "December 2",
+    "year": "2009",
+    "label": "White Lily Records",
+    "cat": "DQC-394",
+    "badges": {
+      "CD": "gray",
+      "shibuya-kei": "pink"
+    },
+    "desc": "HNC's third album.",
+    "downloads": {
+      "Scans - HQ": {
+        "filename": "hnc-cult-scans-hq.zip",
+        "size": "225.3 MB"
+      },
+      "Scans - LQ": {
+        "filename": "hnc-cult-scans-lq.zip",
+        "size": "2.3 MB"
+      }
+    },
+    "links": {
+      "Discogs": "https://www.discogs.com/release/5709273-HNC-Cult",
+      "RYM": "https://rateyourmusic.com/release/album/hnc/cult/"
+    }
+  },
   "ichiko-aoba-qp": {
     "music": true,
     "thumb": "IMG_20200827_0008.jpg",
@@ -177,7 +208,7 @@
     "downloads": {
       "Scans - HQ": {
         "filename": "ichiko-aoba-qp-scans-hq.zip",
-        "size": "15.9"
+        "size": "15.9 MB"
       },
       "Scans - LQ": {
         "filename": "ichiko-aoba-qp-scans-lq.zip",
@@ -187,6 +218,101 @@
     "links": {
       "Discogs": "https://www.discogs.com/release/15600552-Aoba-Ichiko-%EF%BD%91%EF%BD%90",
       "RYM": "https://rateyourmusic.com/release/album/%E9%9D%92%E8%91%89%E5%B8%82%E5%AD%90/qp/"
+    }
+  },
+  "suitcase-rhodes-pop-music": {
+    "music": true,
+    "thumb": "front.jpg",
+    "title": "Pop Music for Pop People",
+    "titleR": "",
+    "artist": "Suitcase Rhodes",
+    "artistR": "",
+    "day": "October 10",
+    "year": "2000",
+    "label": "Garden Wall Records",
+    "cat": "GWR CD-0007",
+    "badges": {
+      "CD": "gray",
+      "shibuya-kei": "pink"
+    },
+    "desc": "Suitcase Rhodes' first and only album.",
+    "downloads": {
+      "Scans - HQ": {
+        "filename": "suitcase-rhodes-pop-music-scans-hq.zip",
+        "size": "138.9 MB"
+      },
+      "Scans - LQ": {
+        "filename": "suitcase-rhodes-pop-music-scans-lq.zip",
+        "size": "2.1 MB"
+      }
+    },
+    "links": {
+      "Discogs": "https://www.discogs.com/release/10457309-Suitcase-Rhodes-Pop-Music-For-Pop-People",
+      "RYM": "https://rateyourmusic.com/release/album/suitcase-rhodes/pop-music-for-pop-people/"
+    }
+  },
+  "sylvia-55-go-sylvia-go": {
+    "music": true,
+    "thumb": "front.jpg",
+    "title": "Go! Sylvia Go!",
+    "titleR": "",
+    "artist": "Sylvia 55",
+    "artistR": "",
+    "day": "September 25",
+    "year": "2000",
+    "label": "LD&K",
+    "cat": "101-LDKCD",
+    "badges": {
+      "CD": "gray",
+      "indie pop": "green",
+      "shibuya-kei": "pink"
+    },
+    "desc": "Sylvia 55's first album.",
+    "downloads": {
+      "Scans - HQ": {
+        "filename": "sylvia-55-go-sylvia-go-scans-hq.zip",
+        "size": "214.8 MB"
+      },
+      "Scans - LQ": {
+        "filename": "sylvia-55-go-sylvia-go-scans-lq.zip",
+        "size": "2.0 MB"
+      }
+    },
+    "links": {
+      "Discogs": "https://www.discogs.com/release/16312524-Sylvia-55-Go-Sylvia-Go",
+      "RYM": "https://rateyourmusic.com/release/ep/sylvia-55/go-sylvia-go/"
+    }
+  },
+  "va-guitar-pop-crazy": {
+    "music": true,
+    "thumb": "front.jpg",
+    "title": "Guitar Pop Crazy!",
+    "titleR": "",
+    "artist": "Various Artists",
+    "artistR": "",
+    "day": "April 6",
+    "year": "2005",
+    "label": "Bluebadge Label",
+    "cat": "bbcd-009",
+    "badges": {
+      "CD": "gray",
+      "neo-acoustic": "teal",
+      "indie pop": "green"
+    },
+    "desc": "Compilation of guitar pop bands, mostly from Bluebadge.",
+    "downloads": {
+      "Scans - HQ": {
+        "filename": "va-guitar-pop-crazy-scans-hq.zip",
+        "size": "159.7 MB"
+      },
+      "Scans - LQ": {
+        "filename": "va-guitar-pop-crazy-scans-lq.zip",
+        "size": "2.7 MB"
+      }
+    },
+    "links": {
+      "Discogs": "https://www.discogs.com/release/4732710-Various-Guitar-Pop-Crazy-Bluebadge-Compilation-Vol3",
+      "RYM": "https://rateyourmusic.com/release/comp/various-artists/guitar-pop-crazy-bluebadge-compilation-vol-3/"
     }
   },
   "advantage-lucy-misc": {
