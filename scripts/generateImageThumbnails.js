@@ -20,6 +20,7 @@ const generateThumbnails = async () => {
   const folders = fs.readdirSync(rawImagesDir);
 
   for (const folder of folders) {
+    if (folder === "~zipped") continue;
     const rawFolderPath = path.join(rawImagesDir, folder, rawSubDir);
     const outputFolder = path.join(thumbsDir, folder);
 

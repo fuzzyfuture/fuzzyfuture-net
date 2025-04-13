@@ -16,6 +16,7 @@ const generateWebImages = async () => {
   const folders = fs.readdirSync(baseDir);
 
   for (const folder of folders) {
+    if (folder === "~zipped") continue;
     const rawFolderPath = path.join(baseDir, folder, rawSubDir);
     const webFolderPath = path.join(baseDir, folder, webSubDir);
 

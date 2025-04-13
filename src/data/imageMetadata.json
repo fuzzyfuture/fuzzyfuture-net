@@ -195,6 +195,26 @@
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/advantage-lucy-misc/web/IMG_20210516_0102.jpg"
     ]
   },
+  "dollys-pillbox-how-are-you-today": {
+    "raw": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/back.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/booklet-1.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/booklet-2.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/booklet-3.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/cd.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/front.png",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/raw/tray-inner.png"
+    ],
+    "web": [
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/back.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/booklet-1.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/booklet-2.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/booklet-3.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/cd.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/front.jpg",
+      "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/dollys-pillbox-how-are-you-today/web/tray-inner.jpg"
+    ]
+  },
   "frenesi-cupra": {
     "raw": [
       "https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans/frenesi-cupra/raw/back.png",

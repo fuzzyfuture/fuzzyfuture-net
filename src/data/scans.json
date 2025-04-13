@@ -1,4 +1,36 @@
 {
+  "dollys-pillbox-how-are-you-today": {
+    "music": true,
+    "thumb": "front.jpg",
+    "title": "How Are You Today?",
+    "titleR": "",
+    "artist": "Dolly's Pillbox!",
+    "artistR": "",
+    "day": "June 3",
+    "year": "2006",
+    "label": "Silent Agreement",
+    "cat": "saip014",
+    "badges": {
+      "CD": "gray",
+      "twee pop": "pink",
+      "slowcore": "teal"
+    },
+    "desc": "Dolly's Pillbox's first and only EP.",
+    "downloads": {
+      "Scans - HQ": {
+        "filename": "dollys-pillbox-how-are-you-today-scans-hq.zip",
+        "size": "143.7 MB"
+      },
+      "Scans - LQ": {
+        "filename": "dollys-pillbox-how-are-you-today-scans-lq.zip",
+        "size": "1.2 MB"
+      }
+    },
+    "links": {
+      "Discogs": "https://www.discogs.com/release/2116171",
+      "RYM": "https://rateyourmusic.com/release/ep/dollys-pillbox/how-are-you-today/"
+    }
+  },
   "frenesi-cupra": {
     "music": true,
     "thumb": "front.jpg",
