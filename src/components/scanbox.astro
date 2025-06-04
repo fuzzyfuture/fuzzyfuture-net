@@ -21,22 +21,21 @@ const { href, thumb, title, titleR, artist, artistR, year, cat, badges, desc } =
     <div class="ps-2 w-100 h-100 d-flex flex-column">
       <div class="top">
         <div class="title">
-          <b>{title} <span class="title-r">{titleR ? "(" + titleR + ")" : ""}</b>
+          <b>{title} <span class="title-r">{titleR ? "(" + titleR + ")" : ""}</span> </b>
+          <div class="artist">
+            {artist}
+            <span class="artist-r">{artistR ? "(" + artistR + ")" : ""}</span>
+          </div>
         </div>
-        <div class="artist">
-          {artist} <span class="artist-r">{artistR ? "(" + artistR + ")" : ""}</span>
+        <div class="badges d-flex flex-wrap">
+          {Object.entries(badges).map(([name, color]) => <span class={"cbadge badge-" + color}>{name}</span>)}
         </div>
-      </div>
-      <div class="badges d-flex flex-wrap">
-        {Object.entries(badges).map(([name, color]) => (
-          <span class={"cbadge badge-" + color}>{name}</span>
-        ))}
-      </div>
-      <div class="desc">
-        <small>{desc ? desc : ""}</small>
-      </div>
-      <div class="release-info mt-auto">
-        {year && cat ? year + " | " + cat : ""}
+        <div class="desc">
+          <small>{desc ? desc : ""}</small>
+        </div>
+        <div class="release-info mt-auto">
+          {year && cat ? year + " | " + cat : ""}
+        </div>
       </div>
     </div>
   </a>

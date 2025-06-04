@@ -15,8 +15,11 @@ const { name, href, intlShipping, logo, desc } = Astro.props;
     <a class="gradient-box d-flex p-2" href={href} target="_blank">
       <img src={"/img/logos/" + logo} class="align-self-center me-2" height="32" />
       <div>
-        <b>{name}</b> <br />
-        <small>Intl. shipping:</small> <span class={"cbadge badge-" + (intlShipping ? "green" : "red")}>{intlShipping ? "yes! :D" : "no :<"}</span> <br />
+        <b>{name}</b>
+        <br />
+        <small>Intl. shipping:</small>
+        <span class={"cbadge badge-" + (intlShipping ? "green" : "red")}>{intlShipping ? "yes! :D" : "no :<"}</span>
+        <br />
       </div>
     </a>
   </div>
