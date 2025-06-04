@@ -32,10 +32,16 @@ footer a :hover {
 
 .nav {
   border-top: solid #7095cb 1px;
-  border-bottom: solid rgba(76,113,168,1) 1px;
+  border-bottom: solid rgba(76, 113, 168, 1) 1px;
   padding: 0px 5px;
-  background: rgb(76,113,168);
-  background: linear-gradient(0deg, rgba(76,113,168,1) 0%, rgba(93,135,196,1) 50%, rgba(112,149,203,1) 50%, rgba(202,220,247,1) 100%);
+  background: rgb(76, 113, 168);
+  background: linear-gradient(
+    0deg,
+    rgba(76, 113, 168, 1) 0%,
+    rgba(93, 135, 196, 1) 50%,
+    rgba(112, 149, 203, 1) 50%,
+    rgba(202, 220, 247, 1) 100%
+  );
 }
 
 .nav .container-fluid {
@@ -68,7 +74,7 @@ footer a :hover {
 .nav-link:focus,
 .nav-link:active {
   color: white;
-  background: rgba(76,113,168,1);
+  background: rgba(76, 113, 168, 1);
   transition: none;
 }
 
@@ -76,7 +82,7 @@ footer a :hover {
   .nav {
     padding: 0 0 5px 0;
     gap: 3px;
-    background: #C1E0FF;
+    background: #c1e0ff;
     border: none;
   }
 
@@ -116,7 +122,7 @@ footer a :hover {
     padding: 10px 10px !important;
     font-weight: bold;
     transition: none;
-    background: linear-gradient(90deg, rgba(76,113,168,1) 50%, #91c3f5 90%);
+    background: linear-gradient(90deg, rgba(76, 113, 168, 1) 50%, #91c3f5 90%);
     border-bottom: 1px solid #91c3f5;
   }
 }
@@ -160,13 +166,21 @@ footer a :hover {
   border: 1px solid black;
 }
 
-.lastfm-credit a {
-  opacity: 0.5;
+.link-muted {
   text-decoration: none;
+  opacity: 0.5;
 }
 
-.lastfm-credit a:hover {
+.link-muted:hover {
   text-decoration: underline;
+}
+
+.badge-link img {
+  border: 1px solid #a5c7eb;
+}
+
+.badge-link:hover img {
+  border: 1px solid black;
 }
 
 .gradient-box {
@@ -405,7 +419,7 @@ h1 {
   font-size: 1.2rem;
   font-weight: bold;
   border: 1px solid white;
-  background-color: rgba(93,135,196,1);
+  background-color: rgba(93, 135, 196, 1);
   border-radius: 10px 35px 5px 5px;
   color: white;
   padding: 5px 8px 4px 8px;
@@ -415,7 +429,7 @@ h2 {
   font-size: 1rem;
   font-weight: bold;
   border: 1px solid white;
-  background-color: rgba(93,135,196,1);
+  background-color: rgba(93, 135, 196, 1);
   color: white;
   padding: 5px 5px 4px 10px;
   border-radius: 5px 5px 35px 10px;
@@ -432,4 +446,9 @@ h2::before {
 .img-fluid-col {
   width: 100%;
   height: auto;
+}
+
+.fc2-counter {
+  position: relative;
+  top: 3px;
 }
