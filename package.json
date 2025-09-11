@@ -15,7 +15,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.16.13",
+    "astro": "^5.8.2",
     "aws-sdk": "^2.1692.0",
     "fslightbox": "^3.4.2"
   },

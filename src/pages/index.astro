@@ -1,60 +1,73 @@
 ---
-import Layout from '../layouts/main.astro';
+import Layout from "../layouts/main.astro";
 ---
+
 <Layout>
-	<div class="row">
-		<div class="col-md-9 py-2">
-			<div class="box">
-				<h1>Welcome!</h1>
-				<p>Welcome to fuzzyfuture.net ...!</p>
-				<div>This site is very much still under construction. I plan on using it to host some scans... among other things.... not sure yet..</div>
-			</div>
-			<hr />
-			<div class="box">
-				<h1>About Me</h1>
-				<div>I'm nate.</div>
-			</div>
-			<hr />
-		</div>
-		<div class="col-md-3 py-2 sidebar d-flex flex-column">
-			<div class="lastfm">
-					<small>now playing</small>
-					<a class="d-flex align-items-start mb-1" href="https://www.last.fm/user/natepilled" target="_blank">
-						<img id="albumArt" class="d-inline-block" src="/img/album-art.jpg"></img>
-						<div class="px-1 mb-2">
-							<small id="song">Loading...</small> <br />
-							<small id="artist">by Nate</small>
-						</div>
-					</a>
-			</div>
-			<div class="lastfm-credit text-end">
-				<a href="https://github.com/biancarosa/lastfm-last-played" target="_blank"><small>last.fm api by biancarosa</small></a>
-			</div>
-			<div class="mt-auto align-self-center">
-				<script is:inline type="text/javascript" src="//counter1.fc2.com/counter.php?id=38830087&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=38830087&main=1" /></noscript>
-			</div>
+  <div class="row">
+    <div class="col-md-9 py-2">
+      <div class="box">
+        <h1>Welcome!</h1>
+        <p>Welcome to fuzzyfuture.net ...!</p>
+        <div>This site is very much still under construction. I plan on using it to host some scans... among other things.... not sure yet..</div>
+      </div>
+      <hr />
+      <div class="box">
+        <h1>About Me</h1>
+        <div>I'm nate.</div>
+      </div>
+      <hr />
     </div>
-    <script is:inline type="text/javascript">
-        let user = 'natepilled';
-        let url = 'https://lastfm-last-played.biancarosa.com.br/' + user + '/latest-song';
+    <div class="col-md-3 py-2 sidebar d-flex flex-column">
+      <div class="fc2-counter align-self-end">
+        <script is:inline type="text/javascript" src="//counter1.fc2.com/counter.php?id=38830087&main=1"></script>
+        <noscript>
+          <img src="//counter1.fc2.com/counter_img.php?id=38830087&main=1" />
+        </noscript>
+      </div>
+      <div class="lastfm">
+        <small>now playing</small>
+        <a href="https://www.last.fm/user/natepilled" target="_blank">
+          <div class="d-flex align-items-start mb-1">
+            <img id="albumArt" class="d-inline-block" src="/img/album-art.jpg" />
+            <div class="px-1 mb-2">
+              <small id="song">Loading...</small>
+              <br />
+              <small id="artist">by Nate</small>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="text-end">
+        <a href="https://github.com/biancarosa/lastfm-last-played" target="_blank" class="link-muted"><small>last.fm api by biancarosa</small></a>
+      </div>
+      <div class="mt-auto text-center">
+        <a href="https://staydown.money/" target="_blank" class="badge-link"><img src="/img/badges/badge-sd.png" /></a>
+        <br />
+        <a href="https://staydown.money/wr?prev=https://fuzzyfuture.net/" class="link-muted"><small>&lt;-&nbsp; prev</small></a>
+        <a href="https://staydown.money/wr?random=https://fuzzyfuture.net/" class="link-muted"><small>random</small></a>
+        <a href="https://staydown.money/wr?next=https://fuzzyfuture.net/" class="link-muted"><small>next &nbsp;-&gt;</small></a>
+      </div>
+    </div>
+  </div>
+  <script is:inline type="text/javascript">
+    let user = "natepilled";
+    let url = "https://lastfm-last-played.biancarosa.com.br/" + user + "/latest-song";
 
-        let songEl = document.querySelector('#song');
-				let artistEl = document.querySelector('#artist');
-				let imgEl = document.querySelector('#albumArt');
+    let songEl = document.querySelector("#song");
+    let artistEl = document.querySelector("#artist");
+    let imgEl = document.querySelector("#albumArt");
 
-        fetch(url)
-					.then(function (response) {
-							return response.json()
-					}).then(function (json) {
-						let track = json['track'];
-						
-						songEl.innerHTML = track['name'];
-						artistEl.innerHTML = 'by ' + track['artist']['#text'];
+    fetch(url)
+      .then(function (response) {
+        return response.json();
+      })
+      .then(function (json) {
+        let track = json["track"];
 
-						if (track['image'][0]['#text'])
-						imgEl.src = track['image'][0]['#text'];
-					});
-    </script>
-		</div>
-	</div>
+        songEl.innerHTML = track["name"];
+        artistEl.innerHTML = "by " + track["artist"]["#text"];
+
+        if (track["image"][0]["#text"]) imgEl.src = track["image"][0]["#text"];
+      });
+  </script>
 </Layout>

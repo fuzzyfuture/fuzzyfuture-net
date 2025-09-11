@@ -1,16 +1,16 @@
 ---
-import Layout from '../../layouts/main.astro';
-import imageMetadata from '../../data/imageMetadata.json';
+import Layout from "../../layouts/main.astro";
+import imageMetadata from "../../data/imageMetadata.json";
 
 export async function getStaticPaths() {
-  const { default: scans } = await import('../../data/scans.json');
+  const { default: scans } = await import("../../data/scans.json");
   const paths = Object.keys(scans).map((slug) => ({
     params: { slug },
-    props: { scan: scans[slug] }
+    props: { scan: scans[slug] },
   }));
 
   console.log(paths);
-  
+
   return paths;
 }
 
@@ -26,10 +26,11 @@ const { slug } = Astro.params;
 const { scan } = Astro.props;
 
 const images = imageMetadata[slug] || [];
-const thumbnails = images.web.map((img: string) => img.replace('https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans', '/img/thumbs').replace('/web', ''));
+const thumbnails = images.web.map((img: string) => img.replace("https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/scans", "/img/thumbs").replace("/web", ""));
 const downloads = scan.downloads as Downloads;
 const links = scan.links as Links;
 ---
+
 <Layout>
   <div class="row mb-3">
     <div class="col-md-9">
@@ -41,14 +42,14 @@ const links = scan.links as Links;
           <h5>{scan.artist} {scan.artistR ? "(" + scan.artistR + ")" : ""}</h5>
         </div>
         <div class="scan-info">
-          Released: {scan.day ? scan.day + ", " + scan.year : scan.year} <br />
-          Label: {scan.label} <br />
+          Released: {scan.day ? scan.day + ", " + scan.year : scan.year}
+          <br />
+          Label: {scan.label}
+          <br />
           Catalog Number: {scan.cat}
         </div>
         <div class="badges-lg">
-          {Object.entries(scan.badges).map(([name, color]) => (
-            <span class={"cbadge-lg badge-" + color}>{name}</span>
-          ))}
+          {Object.entries(scan.badges).map(([name, color]) => <span class={"cbadge-lg badge-" + color}>{name}</span>)}
         </div>
         <div>{scan.descLong ? scan.descLong : scan.desc}</div>
       </div>
@@ -56,32 +57,51 @@ const links = scan.links as Links;
     <div class="col-md-3 sidebar">
       <div class="my-2 d-flex flex-column">
         <div><b>Downloads</b></div>
-        {downloads ? Object.entries(downloads).map(([name, download]) => (
-          <a href={"https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/downloads/" + download.filename} class="dl mt-1">{name} (.zip, {download.size})</a>
-        )) : ""}
+        {
+          downloads
+            ? Object.entries(downloads).map(([name, download]) => (
+                <a href={"https://s3.us-east-2.amazonaws.com/fuzzyfuture.net/downloads/" + download.filename} class="dl mt-1">
+                  {name} (.zip, {download.size})
+                </a>
+              ))
+            : ""
+        }
         <div class="mt-1"><b>External Links</b></div>
-        {links ? Object.entries(links).map(([name, href]) => (
-          <a href={href} class="dl mt-1" target="_blank">{name}</a>
-        )) : ""}
+        {
+          links
+            ? Object.entries(links).map(([name, href]) => (
+                <a href={href} class="dl mt-1" target="_blank">
+                  {name}
+                </a>
+              ))
+            : ""
+        }
       </div>
     </div>
   </div>
   <div class="row mb-3 p-1">
-    {thumbnails.map((thumb: string, index: number) => (
-      <div class="scan-thumb-container col-lg-2 col-md-3 col-6 g-3">
-        <a data-fslightbox="gallery" href={images.web[index]}>
-          <div class="card scan-thumb">
-            <img src={thumb}/>
+    {
+      thumbnails.map((thumb: string, index: number) => (
+        <div class="scan-thumb-container col-lg-2 col-md-3 col-6 g-3">
+          <a data-fslightbox="gallery" href={images.web[index]}>
+            <div class="card scan-thumb">
+              <img src={thumb} />
+            </div>
+          </a>
+          <div class="mt-2 scan-img-info">
+            {images.web[index].split("/").pop()}
+            <hr class="my-1 mx-0" />
+            <a href={images.web[index]} target="_blank">
+              dl LQ <i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+            </a>{" "}
+            |
+            <a href={images.raw[index]} target="_blank">
+              dl HQ <i class="fa-solid fa-arrow-up-right-from-square fa-xs" />
+            </a>
           </div>
-        </a>
-        <div class="mt-2 scan-img-info">
-          {images.web[index].split('/').pop()}
-          <hr class="my-1 mx-0"/>
-          <a href={images.web[index]} target="_blank">dl LQ <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a> |
-          <a href={images.raw[index]} target="_blank">dl HQ <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></a>
         </div>
-      </div>
-    ))}
+      ))
+    }
   </div>
   <script src="https://cdn.jsdelivr.net/npm/fslightbox/index.js" defer></script>
 </Layout>

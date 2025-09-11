@@ -1,8 +1,8 @@
 ---
-import Layout from '../../layouts/main.astro';
-import ScanBox from '../../components/scanbox.astro';
+import Layout from "../../layouts/main.astro";
+import ScanBox from "../../components/scanbox.astro";
 
-import scansData from '../../data/scans.json';
+import scansData from "../../data/scans.json";
 
 interface Scan {
   music: boolean;
@@ -25,52 +25,57 @@ interface Scan {
 const scans: Record<string, Scan> = scansData;
 const groupedScans = {
   music: Object.entries(scans).filter(([_, scan]) => scan.music),
-  books: Object.entries(scans).filter(([_, scan]) => !scan.music)
+  books: Object.entries(scans).filter(([_, scan]) => !scan.music),
 };
 ---
+
 <Layout>
-	<div class="row">
-		<div class="col-md-12 py-2">
+  <div class="row">
+    <div class="col-md-12 py-2">
       <div class="box pb-2">
         <h1>Music</h1>
         <div class="row g-3">
-          {groupedScans.music.map(([slug, scan]) => (
-            <ScanBox
-              href={slug}
-              thumb={scan.thumb}
-              title={scan.title}
-              titleR={scan.titleR}
-              artist={scan.artist}
-              artistR={scan.artistR}
-              year={scan.year}
-              cat={scan.cat}
-              badges={scan.badges}
-              desc={scan.desc}
-            />
-          ))}
+          {
+            groupedScans.music.map(([slug, scan]) => (
+              <ScanBox
+                href={slug}
+                thumb={scan.thumb}
+                title={scan.title}
+                titleR={scan.titleR}
+                artist={scan.artist}
+                artistR={scan.artistR}
+                year={scan.year}
+                cat={scan.cat}
+                badges={scan.badges}
+                desc={scan.desc}
+              />
+            ))
+          }
         </div>
       </div>
       <hr />
-			<div class="box pb-2">
+      <div class="box pb-2">
         <h1>Books</h1>
         <div class="row g-3">
-          {groupedScans.books.map(([slug, scan]) => (
-            <ScanBox
-              href={slug}
-              thumb={scan.thumb}
-              title={scan.title}
-              titleR={scan.titleR}
-              artist={scan.artist}
-              artistR={scan.artistR}
-              year={scan.year}
-              cat={scan.cat}
-              badges={scan.badges}
-              desc={scan.desc}
-            />
-          ))}
+          {
+            groupedScans.books.map(([slug, scan]) => (
+              <ScanBox
+                href={slug}
+                thumb={scan.thumb}
+                title={scan.title}
+                titleR={scan.titleR}
+                artist={scan.artist}
+                artistR={scan.artistR}
+                year={scan.year}
+                cat={scan.cat}
+                badges={scan.badges}
+                desc={scan.desc}
+              />
+            ))
+          }
         </div>
       </div>
       <hr />
-		</div>
-	</div>
+    </div>
+  </div>
 </Layout>
